@@ -1,48 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Sullayman Junior Samai</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals| Sullayman Junior Samai">
-    <meta name="author" content="Sullayman Junior Samai">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals| Sullayman Junior Samai</h1>
-        <nav>
-            <ul>
-                <li><a href="linkedin.com/in/sullayman-junior-samai-394839182">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/29?lang=eng&id=p9#p9">Favorite Scripture</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim, nisi id viverra porttitor, dui metus mattis ligula, eget tincidunt odio eros vel ligula.</p>
-            <a href="#">Resource 1</a>
-            <a href="#">Resource 2</a>
-            <a href="#">Resource 3</a>
-        </section>
-        <section class="card">
-            <h2>Sierra Leone</h2>
-            <p>Integer feugiat tellus sit amet quam blandit aliquet. Fusce in nisi eu purus gravida dictum nec nec sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce dignissim elit vitae ligula interdum dignissim.</p>
-            <a href="#">Resource 1</a>
-            <a href="#">Resource 2</a>
-            <a href="#">Resource 3</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Sullayman Junior Samai - Makeni Sierra Leone</p>
-        <p id="lastModified"></p>
-    </footer>
-</body>
-</html>
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 131 - Dynamic Web Fundamentals Home Page">
+        <meta name="author" content="Benjamin Wasden">
+        <title>WDD 131 - Dynamic Web Fundamentals - Sullayman J Samai</title>
+    </head>
+    <body>
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - Sullayman J Samai</h1>
+            <nav>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/29?lang=eng">Scripture</a>
+                <a href="project/index.html">Final Project</a>
+            </nav>
+        </header>
+        <div class="grid">
+            <main>
+                <section class="card">
+                    <h2>About Me</h2>
+                    <img src="images/me yo.jpg" alt="Image of Sullayman J. samai" width="150">
+                    <p>Hi! My name is Sullayman Junior samai. I was bor and grow up in Sierra Leone!</p>
+                    <div class="state">
+                        <h3>Sierra Leone</h3>
+                        <figure>
+                            <img src="images/sierra-leone-flag-png-large.png" alt="Sierra LeoneFlag" width="300">
+                            <figcaption>State Flag of Sierra Leone</figcaption>
+                        </figure>
+                        <p>Sierra Leone, country of western Africa. The country owes its name to the 15th-century Portuguese explorer Pedro de Sintra, the first European to sight and map Freetown harbour. The original Portuguese name, Serra Lyoa (“Lion Mountains”), referred to the range of hills that surrounds the harbour. The capital, Freetown, commands one of the world’s largest natural harbours.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Web Dev Resources</h2>
+                    <ul>
+                        <li><a href="https://www.udemy.com/">Udemy Website</a></li>
+                        <li><a href="https://www.amazon.com/">Amazon Website</a></li>
+                        <li><a href="https://www.aqskill.com/">aqskills Website</a></li>
+                        <li><a href="https://alison.com/">Alison Website</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>©<span id="currentyear"></span> | Sullayman J. samai | Sierra Leone Africa</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html

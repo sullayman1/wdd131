@@ -1,25 +1,7 @@
-// getdates.js
-
-// Get current year
+// Get current year for copyright
 let currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
 
 // Get last modified date of the document
 let lastModifiedDate = document.lastModified;
-
-// Update footer dynamically
-document.addEventListener('DOMContentLoaded', function() {
-    let footer = document.querySelector('footer');
-    if (footer) {
-        // Update first paragraph with current year
-        let firstParagraph = footer.querySelector('p:first-of-type');
-        if (firstParagraph) {
-            firstParagraph.textContent = `Copyright © ${currentYear}`;
-        }
-
-        // Update second paragraph with last modified date
-        let secondParagraph = footer.querySelector('p:nth-of-type(2)');
-        if (secondParagraph) {
-            secondParagraph.textContent = `Last modified: ${lastModifiedDate}`;
-        }
-    }
-});
+document.getElementById('lastModified').textContent = `Last modified: ${lastModifiedDate}`;
