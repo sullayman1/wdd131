@@ -1,0 +1,20 @@
+@media screen and (min-width: 500px) {
+    #menu {
+        display: none;
+    }
+    nav {
+        flex-direction: row;
+    }
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+    /* I can stretch this to allow for multiple columns, though in the example it only had 3 so I limited it to 3.
+    If I wanted to change it, all I'd have to do is take away the max width. */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1rem;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
