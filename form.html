@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sullayman Junior Samai WDD 131 - Review Form">
+    <meta name="author" content="Sullayman Junior Samai">
+    <title>WDD 131 - Product Review Form - Sullayman Junior Samai</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="product">
+            <fieldset>
+                <label>Product name
+                    <select name="productName" id="productName" required>
+                        <option value="" disabled selected>Select a product...</option>
+                    </select>
+                </label>
+
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <div><label>☆</label><input type="radio" name="rating" id="onestar" required></div>
+                    <div><label>☆☆</label><input type="radio" name="rating" id="twostar" required></div>
+                    <div><label>☆☆☆</label><input type="radio" name="rating" id="threestar" required></div>
+                    <div><label>☆☆☆☆</label><input type="radio" name="rating" id="fourstar" required></div>
+                    <div><label>☆☆☆☆☆</label><input type="radio" name="rating" id="fivestar" required></div>
+                </div>
+                <label>Date of Installation <input type="date" name="installation" id="installDate"></label>
+
+                <div>Which features did you find useful in the product?</div>
+                <span class="apply"> (Check all that apply)</span>
+                <label><input type="checkbox" name="durability" id="strength">Durability</label>
+                <label><input type="checkbox" name="easyuse" id="ease">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="perform">Performance</label>
+                <label><input type="checkbox" name="design" id="design">Design</label>
+                
+                <label>Written Review <span class="optional">(Optional)</span></label>
+                <textarea name="review" id="writtenreview" rows="4"></textarea>
+
+                <label>Your Name <span class="optional">(Optional)</span><input type="text" name="name" id="name"></label>
+
+                <input type="submit" value="Post My Review">
+            </fieldset>
+        </form>
+    </main>
+<footer>
+    <p>©<span id="currentyear"></span> | Sullayman J. Samai | Sierra Leone</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
