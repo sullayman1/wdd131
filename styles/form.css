@@ -100,5 +100,5 @@ textarea {
     border-left: solid 5px red;
 }
 .product select:required:valid {
-    border-left: solid 5px green;
+    border-left: solid 5px rgb(62, 112, 176);
 }
